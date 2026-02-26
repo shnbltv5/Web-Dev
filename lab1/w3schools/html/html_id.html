@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML id Attribute</title>
+
+    <style>
+        #mainTitle {
+            background-color: lightblue;
+            color: black;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .city {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="mainTitle">My Cities</h1>
+
+    <h2 class="city">London</h2>
+    <p>Capital of England</p>
+
+    <h2 class="city">Paris</h2>
+    <p>Capital of France</p>
+
+    <h2 class="city">Tokyo</h2>
+    <p>Capital of Japan</p>
+
+    <hr>
+
+    <h2 id="chapter4">Chapter 4</h2>
+    <p>This is chapter 4 content.</p>
+
+    <a href="#chapter4">Jump to Chapter 4</a>
+
+    <hr>
+
+    <button onclick="changeText()">Change title</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("mainTitle").innerHTML = "Have a nice day!";
+        }
+    </script>
+
+</body>
+</html>

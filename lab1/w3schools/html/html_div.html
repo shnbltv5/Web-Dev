@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Div Element</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            background-color: #f2f2f2;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .center-box {
+            width: 300px;
+            margin: auto;
+            background-color: #e0e0e0;
+            padding: 15px;
+        }
+
+        .inline-block div {
+            width: 30%;
+            display: inline-block;
+            background-color: #d9edf7;
+            padding: 10px;
+        }
+
+        .flex-container {
+            display: flex;
+        }
+
+        .flex-container div {
+            width: 33%;
+            background-color: #fdebd0;
+            padding: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+
+        .grid-container div {
+            background-color: #d5f5e3;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Div Element</h1>
+
+    <h2>Div as a Block Element</h2>
+    Lorem Ipsum
+    <div class="box">I am a div</div>
+    dolor sit amet.
+
+    <h2>Div as a Container</h2>
+    <div class="box">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+        <p>London has over 9 million inhabitants.</p>
+    </div>
+
+    <h2>Centered Div</h2>
+    <div class="center-box">
+        <h3>London</h3>
+        <p>Centered div element</p>
+    </div>
+
+    <h2>Multiple Div Elements</h2>
+    <div class="box">
+        <h3>Oslo</h3>
+        <p>Capital of Norway</p>
+    </div>
+
+    <div class="box">
+        <h3>Rome</h3>
+        <p>Capital of Italy</p>
+    </div>
+
+    <h2>Divs Side by Side (inline-block)</h2>
+    <div class="inline-block">
+        <div>London</div>
+        <div>Oslo</div>
+        <div>Rome</div>
+    </div>
+
+    <h2>Divs Side by Side (flex)</h2>
+    <div class="flex-container">
+        <div>London</div>
+        <div>Oslo</div>
+        <div>Rome</div>
+    </div>
+
+    <h2>Divs Side by Side (grid)</h2>
+    <div class="grid-container">
+        <div>London</div>
+        <div>Oslo</div>
+        <div>Rome</div>
+    </div>
+
+</body>
+</html>

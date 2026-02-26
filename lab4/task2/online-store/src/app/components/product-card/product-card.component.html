@@ -1,0 +1,35 @@
+<div class="card">
+
+  <div class="image-wrapper">
+    <img [src]="product().image" />
+  </div>
+
+  <div class="title">
+    {{ product().name }}
+  </div>
+
+  <div class="reviews">
+    <span *ngFor="let star of getStars()">★</span>
+    <span class="rating">
+      {{ product().rating }}
+    </span>
+  </div>
+
+  <div class="price-block">
+    <div class="price">
+      {{ product().price | number }} ₸
+    </div>
+
+    <div class="installment">
+      <span class="yellow">
+        {{ (product().price / 12) | number:'1.0-0' }} ₸
+      </span>
+      x12
+    </div>
+  </div>
+
+  <a [href]="product().link" target="_blank" class="kaspi-link">
+    Перейти в Kaspi
+  </a>
+
+</div>

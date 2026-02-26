@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Links</title>
+
+    <style>
+        a:link {
+            color: green;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        .button-link {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Links</h1>
+
+    <h2>Basic Link</h2>
+
+    <p>
+        <a href="https://www.w3schools.com/">Visit W3Schools</a>
+    </p>
+
+    <h2>Target Attribute</h2>
+
+    <p>
+        <a href="https://www.w3schools.com/" target="_blank">
+            Open in new tab
+        </a>
+    </p>
+
+    <h2>Absolute and Relative URLs</h2>
+
+    <p>
+        <a href="https://www.google.com/">Absolute URL</a>
+    </p>
+
+    <p>
+        <a href="about.html">Relative URL</a>
+    </p>
+
+    <h2>Image as a Link</h2>
+
+    <a href="https://www.w3schools.com/">
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" 
+             alt="W3Schools" width="100">
+    </a>
+
+    <h2>Email Link</h2>
+
+    <p>
+        <a href="mailto:someone@example.com">Send email</a>
+    </p>
+
+    <h2>Styled Link (Button)</h2>
+
+    <a href="https://www.w3schools.com/" class="button-link">
+        Link Button
+    </a>
+
+    <h2>Bookmark</h2>
+
+    <p>
+        <a href="#chapter4">Jump to Chapter 4</a>
+    </p>
+
+    <h3 id="chapter4">Chapter 4</h3>
+    <p>This is a bookmarked section.</p>
+
+    <h2>Exercise</h2>
+
+    <p><strong>Correct answer:</strong></p>
+    <p>&lt;a href="/home.htm"&gt;Visit W3Schools.com!&lt;/a&gt;</p>
+
+    <p><strong>Default links are underlined:</strong> True</p>
+    <p><strong>Bookmark attribute:</strong> id</p>
+
+</body>
+</html>

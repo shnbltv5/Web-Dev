@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Units in CSS</title>
+
+    <style>
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Absolute units */
+        .absolute-box {
+            width: 200px;
+            height: 100px;
+            background-color: #ff9999;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        /* Relative units */
+        .relative-box {
+            width: 50%;
+            height: 100px;
+            background-color: #99ccff;
+            margin-bottom: 20px;
+            padding: 1em;
+        }
+
+        /* em unit */
+        .em-text {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        /* rem unit */
+        .rem-text {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Mixed units */
+        .mixed {
+            width: 30vw;
+            height: 10vh;
+            background-color: #99ffcc;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Units in CSS</h1>
+
+    <p class="em-text">
+        This text uses <strong>em</strong> units.
+    </p>
+
+    <p class="rem-text">
+        This text uses <strong>rem</strong> units.
+    </p>
+
+    <div class="absolute-box">
+        This box uses <strong>px</strong> (absolute units).
+    </div>
+
+    <div class="relative-box">
+        This box uses <strong>%</strong> and <strong>em</strong> (relative units).
+    </div>
+
+    <div class="mixed">
+        This box uses <strong>vw</strong>, <strong>vh</strong>, and <strong>rem</strong>.
+    </div>
+
+</body>
+</html>

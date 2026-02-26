@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #e60000;
+  color: white;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}

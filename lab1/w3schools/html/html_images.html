@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Images</title>
+
+    <style>
+        .float-right {
+            float: right;
+            width: 80px;
+            margin-left: 10px;
+        }
+
+        .float-left {
+            float: left;
+            width: 80px;
+            margin-right: 10px;
+        }
+
+        body {
+            background-image: url("https://www.w3schools.com/images/background_in_space.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Images</h1>
+
+    <h2>Basic Images</h2>
+
+    <img src="https://www.w3schools.com/images/picture.jpg" alt="Picture example">
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools logo">
+
+    <h2>Image Size</h2>
+
+    <img src="https://www.w3schools.com/images/picture.jpg"
+         alt="Sized image"
+         style="width:200px;height:150px;">
+
+    <h2>Image as a Link</h2>
+
+    <a href="https://www.w3schools.com/">
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg"
+             alt="W3Schools"
+             width="100">
+    </a>
+
+    <h2>Floating Images</h2>
+
+    <p>
+        <img src="https://www.w3schools.com/images/smiley.gif"
+             alt="Smiley"
+             class="float-right">
+        This image floats to the right of the text.
+    </p>
+
+    <p>
+        <img src="https://www.w3schools.com/images/smiley.gif"
+             alt="Smiley"
+             class="float-left">
+        This image floats to the left of the text.
+    </p>
+
+    <h2>Image Map</h2>
+
+    <img src="https://www.w3schools.com/images/workplace.jpg"
+         alt="Workplace"
+         usemap="#workmap"
+         width="400">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" href="computer.html" alt="Computer">
+        <area shape="circle" coords="337,300,44" href="coffee.html" alt="Coffee">
+    </map>
+
+    <h2>Picture Element</h2>
+
+    <picture>
+        <source media="(min-width:650px)" srcset="https://www.w3schools.com/images/img_food.jpg">
+        <source media="(min-width:465px)" srcset="https://www.w3schools.com/images/img_car.jpg">
+        <img src="https://www.w3schools.com/images/img_girl.jpg" alt="Responsive image">
+    </picture>
+
+    <h2>Exercise</h2>
+
+    <p><strong>Correct answer:</strong> &lt;img&gt;</p>
+
+</body>
+</html>
