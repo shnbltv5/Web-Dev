@@ -1,0 +1,15 @@
+.navbar {
+  padding: 15px;
+  background: #222;
+}
+
+.navbar a {
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}

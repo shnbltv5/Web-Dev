@@ -1,0 +1,19 @@
+<h2>Album Photos</h2>
+
+<div *ngIf="photos && photos.length === 0">
+  No photos found
+</div>
+
+<div *ngFor="let photo of photos" class="photo-card">
+  <p>{{ photo.title }}</p>
+  <img [src]="photo.thumbnailUrl">
+</div>
+<div class="grid">
+  <div *ngFor="let photo of photos">
+    <img [src]="photo.thumbnailUrl" />
+    <p>{{ photo.title }}</p>
+  </div>
+</div>
+<button [routerLink]="['/albums', photos[0]?.albumId]">
+  Back
+</button>

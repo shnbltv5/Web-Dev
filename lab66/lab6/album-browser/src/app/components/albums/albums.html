@@ -1,0 +1,33 @@
+<h2>Albums</h2>
+<p>Albums count: {{ albums.length }}</p>
+<!-- {{ albums | json }} -->
+<div *ngIf="albums.length > 0; else loading">
+  <ul>
+    <li *ngFor="let album of albums.filter(a => a.title.toLowerCase().includes(searchText.toLowerCase()))">
+      <a [routerLink]="['/albums', album.id]">
+        {{ album.id }}: {{ album.title }}
+      </a>
+      <button (click)="deleteAlbum(album.id)">Delete</button>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="loading">Loading...</div>
+
+<div *ngIf="!loading">
+  <!-- albums -->
+</div>
+
+
+<input [(ngModel)]="newTitle" placeholder="New album title" />
+<button (click)="addAlbum()">Add</button>
+
+
+<div *ngIf="albums.length === 0 && !loading">
+  No albums found 😢
+</div>
+
+<ng-template #loading>
+  <p>Loading albums...</p>
+</ng-template>
+
